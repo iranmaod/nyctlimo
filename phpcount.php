@@ -68,9 +68,9 @@ class PHPCount
         {
             // TODO: Set the database login credentials.
             self::$DB = new PDO(
-                'mysql:host=localhost;dbname=nyct_new',
-                'root', // Username
-                'nyct-limo!@#4', // Password
+                'mysql:host=localhost;dbname=',
+                '', // Username
+                '', // Password
                 array(PDO::ATTR_PERSISTENT => true)
             );
         }
