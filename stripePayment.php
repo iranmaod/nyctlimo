@@ -23,10 +23,7 @@ if (!empty($_POST['price'])) {
 
     require_once('stripe-php/init.php');
 
-    // \Stripe\Stripe::setApiKey("sk_test_51LZlB8E23L1fPfB4v4oV708HolP8QEdhRhLbzzTAH5WlAeYJwNROQSk218mpX5BwwwiBD8VgJhI4btMQzMPlFWRm007ibJQFal");
-    // \Stripe\Stripe::setApiKey("sk_test_j4fd3smlaBG6UcIFVqtZHOEN");
-    // $stripe = new \Stripe\StripeClient('sk_test_51LZlB8E23L1fPfB4v4oV708HolP8QEdhRhLbzzTAH5WlAeYJwNROQSk218mpX5BwwwiBD8VgJhI4btMQzMPlFWRm007ibJQFal');
-    $stripe = new \Stripe\StripeClient('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');
+    $stripe = new \Stripe\StripeClient('');
 
     $customer = $stripe->customers->create([
         'payment_method' => $_POST['paymentMethod'],
@@ -80,7 +77,6 @@ if (!empty($_POST['price'])) {
         $html = str_replace(" >", ">", $html);
 
         // SendMail($to, $from, $reply, $fromname, $subject, $message);
-        SendMail('muneebtariq1991@gmail.com', 'topctlimo20@gmail.com', $_SESSION['reservation']['email'], 'admin', 'NYCTLimo Reservation Admin Email', $html1 . $html);
         SendMail('nyctlimousine@gmail.com', 'topctlimo20@gmail.com', $_SESSION['reservation']['email'], 'admin', 'NYCTLimo Reservation Admin Email', $html1 . $html);
         // SendMail($_SESSION['reservation']['email'], 'info@topctlimo.com', $_SESSION['reservation']['email'], 'admin', 'New Reservation - NYCTLIMO', $html1 . $html);
         unset($_SESSION['emailhtml']);
