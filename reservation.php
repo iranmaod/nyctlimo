@@ -463,7 +463,7 @@ $arrival_airport = '';
                         <div class="map-div">
                             <div id="map" ></div>
                             <div id="msg"></div>
-                            <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB4JyP0V5neIZXtWIcOxrhVlwWBk-SYFCE&callback=initMap&v=weekly" defer></script>
+                            <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=&callback=initMap&v=weekly" defer></script>
                             <script type="text/javascript">
                                 let map;
                                 let distance = 0;
@@ -1462,9 +1462,8 @@ $arrival_airport = '';
                     </form>
 
                     <script type="text/javascript">
-                        const stripe = Stripe("pk_live_tjPQbVyNMtBkvE4EDe7FNT17");
-                        // const stripe = Stripe("pk_test_51LZlB8E23L1fPfB4DDmgUQ0pLzBqfiejhgsiom6N8Dn0Ku6Gb6GY8unOkMDDzmRUyLuTS8xVrNFgNlLAF30XBhvt002Y9DQM06");
-                        // const stripe = Stripe("pk_test_Qwgyz5qlAyTxmmV8PaibuSIn");
+                        const stripe = Stripe("");
+                        
                         const elements = stripe.elements();
 
                         const style = {
