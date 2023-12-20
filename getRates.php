@@ -676,12 +676,6 @@ if ($_POST['desire_location']) {
             SendMail($_SESSION['reservation']['email'], 'info@topctlimo.com', 'info@topctlimo.com', 'admin', 'NYCTLimo', $html1);
 
 
-//            SendMail('umar.faiz.nvt@gmail.com', 'info@topctlimo.com', $_SESSION['reservation']['email'], 'admin', 'New Reservation - TOPCTLIMO', $html1 . $html);
-            /*SendMail('info@topctlimo.com', 'info@topctlimo.com', $_SESSION['reservation']['email'], 'admin', 'New Reservation - TOPCTLIMO', $html1 . $html);
-            SendMail('topctlimo20@gmail.com', 'info@topctlimo.com', $_SESSION['reservation']['email'], 'admin', 'New Reservation - TOPCTLIMO', $html1 . $html);
-            SendMail('topctlimo@gmail.com', 'info@topctlimo.com', $_SESSION['reservation']['email'], 'admin', 'New Reservation - TOPCTLIMO', $html1 . $html);
-            SendMail('shakil518@gmail.com', 'info@topctlimo.com', $_SESSION['reservation']['email'], 'admin', 'New Reservation - TOPCTLIMO', $html1 . $html);
-            SendMail($_SESSION['reservation']['email'], 'info@topctlimo.com', 'info@topctlimo.com', 'admin', 'New Reservation - TOPCTLIMO', $html1 . $html);*/
 
             $datar['payment'] = 'Thanks for requesting a reservation. Please make a payment with secured STRIPE payment gateway.';
 
